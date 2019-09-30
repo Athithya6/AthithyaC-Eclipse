@@ -1,0 +1,13 @@
+#include<iostream>
+#include<math.h>
+using namespace std;
+
+int main()
+{
+	int s=4;
+	cout<<"\nhello";
+
+	float res=sqrt(s);
+	cout<<"\n"<<res;
+	return 0;
+}
