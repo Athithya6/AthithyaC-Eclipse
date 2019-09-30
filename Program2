@@ -1,0 +1,31 @@
+/*
+ * swapnum.cpp
+ *
+ *  Created on: Sep 24, 2019
+ *      Author: user
+ */
+#include"iostream"
+using namespace std;
+int swap(int* a,int* b);
+
+int main()
+{
+	int p,q;
+	cout<<" Enter any two numbers:\n   ";
+	cin>>p>>q;
+	cout<<" Before swapping,p= "<<p<<" and q= "<<q<<endl;
+	swap(&p,&q);
+	cout<<" After swapping,p= "<<p<<" and q= "<<q<<endl;
+	return 0;
+}
+
+int swap(int* n1,int* n2)
+{
+	*n1=*n1^*n2;
+	*n2=*n1^*n2;
+	*n1=*n1^*n2;
+	return 0;
+}
+
+
+
