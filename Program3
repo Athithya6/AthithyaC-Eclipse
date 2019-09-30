@@ -1,0 +1,16 @@
+#include "iostream"
+using namespace std;
+static int a=0;
+class Print{
+public:
+	Print()
+	{
+		a++;
+		cout<<a<<"\n";
+	}
+};
+
+int main()
+{
+	Print p1[100];
+}
